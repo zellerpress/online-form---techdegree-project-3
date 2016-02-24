@@ -1,0 +1,89 @@
+/* Global Layout Set-up */
+* {
+  box-sizing: border-box;
+}
+fieldset {
+  border: 0 none;
+  margin: 0 auto;
+  padding: 5px 25px;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+h2 {
+  margin: 0 auto;
+  padding: 5px 20px;
+}
+
+hr {
+  width: 90%;
+  color: #292a41;
+  background-color: #292a41;
+}
+
+footer {
+  text-align: center;
+  font-style: italic;
+}
+
+.contact_info input {
+  width: 100%;
+  background-color: #dedede;
+  border: none;
+  border-radius: 5px;
+}
+
+/* Main Content Styles */
+
+.header {
+  text-align: center;
+  background-color: #292a41;
+  color: #fff;
+  padding: 10px;
+}
+
+.signup {
+  text-align: center;
+  margin: 0 auto;
+  padding: 5px 10px;
+}
+
+#hr_bold {
+  height: 5px;
+  color: #292a41;
+  background-color: #292a41;
+}
+
+#hr_regular {
+  height: 2px;
+  color: #292a41;
+  background-color: #292a41;
+}
+
+#zip {
+  width: 50%;
+}
+
+#other_topics {
+  width: 100%;
+  border: none;
+  background-color: #dedede;
+  border-radius: 5px;
+  height: 100px;
+}
+
+button {
+  width: 90%;
+  border-radius: 5px;
+  background-color: #42aba8;
+  color: #fff;
+  border: none;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font-size: 24px;
+  padding: 15px 30px;
+  margin: 0 auto;
+}
