@@ -6,13 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/responsive.css">
   <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'></head>
 
   <form action="index.html" method="post">
   <body>
     <div class="header">
-      <h1>THE CODE REVIEW</h1>
+      <h1>The Code Review</h1>
     </div>
 
     <div class="signup">
@@ -25,19 +24,26 @@
 
     <h2>Contact Information</h2>
 
-    <fieldset id="contact_info">
+    <fieldset>
+      <div class="contact_info">
+
       <label for="name">Full Name</label>
-      <p><input type="text" id="name" name="user_name" placeholder="Required" required></p>
+      <input type="text" id="name" name="user_name" placeholder="Required" required>
+
       <label for="email">Email Address</label>
-      <p><input type="text" id="email" name="user_email" placeholder="Required" required></p>
+      <input type="email" id="email" name="user_email" placeholder="Required" required>
+
       <label for="phone">Phone Number</label>
-      <p><input type="text" id="phone" name="user_phone"></p>
+      <input type="tel" id="phone" name="user_phone">
+
       <label for="street_address">Street Address</label>
-      <p><input type="text" id="street_address" name="user_street_address"></p>
+      <input type="text" id="street_address" name="user_street_address">
+
       <label for="city">City</label>
-      <p><input type="text" id="city" name="user_city"></p>
+      <input type="text" id="city" name="user_city">
+
       <label for="state">State</label>
-      <p><select id="state" name="state">
+      <select id="state" name="state">
         <option value="Choose_State">Choose State</option>
         <option value="Alabama">Alabama </option>
         <option value="Alaska">Alaska </option>
@@ -89,23 +95,24 @@
         <option value="West_Virginia">West Virginia </option>
         <option value="Wisconsin">Wisconsin </option>
         <option value="Wyoming">Wyoming </option>
-      </select></p>
-      <label for="zip">Zip Code</label>
-      <p><input type="text" id="zip" name="user_zip"></p>
+      </select>
 
+      <label for="zip">Zip Code</label>
+      <input type="text" id="zip" name="user_zip">
+    </div>
   </fieldset>
     <hr id="hr_regular">
     <h2>Newsletter</h2>
-    <fieldset>
+    <fieldset id="newsletter">
     Select the newsletters you would live to receive
-
-    <p><input type="checkbox" id="html_news" value="html_news" name="newsletters"> HTML News
-    <br><input type="checkbox" id="css_news" value="css_news" name="newsletters"> CSS News
-    <br><input type="checkbox" id="javascript_news" value="javascript_news" name="newsletters"> Javascript News
+    
+    <p><input type="checkbox" id="news_type" value="html_news" name="newsletters"> HTML News
+    <br><input type="checkbox" id="news_type" value="css_news" name="newsletters"> CSS News
+    <br><input type="checkbox" id="news_type" value="javascript_news" name="newsletters"> Javascript News
 
     <p><label>Newsletter Format</label></p>
-    <p><input type="radio" id="html_option" value="html_option" name="newsletter_format"> HTML
-    <br><input type="radio" id="plain_text" value="plain_text" name="newsletter_format"> Plain text
+    <input type="radio" id="format" value="html_option" name="newsletter_format"> HTML
+    <br><input type="radio" id="format" value="plain_text" name="newsletter_format"> Plain text
 
     <p>Other topics you'd like to hear about</p>
     <textarea id="other_topics" value="other_topics" name="other_topics"></textarea>
