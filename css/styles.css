@@ -12,15 +12,26 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
+.wrapper {
+  max-width: 95%;
+  margin: 0 auto;
+
+}
+
 h2 {
   margin: 0 auto;
   padding: 5px 20px;
 }
 
-hr {
+#hr_bold {
+  border-top: solid 5px #292a41;
+	width: 90%;
+	margin: 0 auto 3px;
+}
+
+#hr_regular {
+  border: solid 1px #292a41;
   width: 90%;
-  color: #292a41;
-  background-color: #292a41;
 }
 
 label {
@@ -73,12 +84,14 @@ input:focus, select:focus, textarea:focus {
   height: 5px;
   color: #292a41;
   background-color: #292a41;
+  margin-top: 30px;
 }
 
 #hr_regular {
   height: 2px;
   color: #292a41;
   background-color: #292a41;
+  margin-bottom: 15px;
 }
 
 input, select, textarea {
@@ -124,8 +137,46 @@ button {
   text-align: center;
   text-decoration: none;
   font-size: 24px;
-  padding: 15px 30px;
+  height: 75px;
+  transition: background-color 0.5s ease;
   margin: 0 auto;
 }
 
+button:hover {
+  background-color: #328a9d;
+}
+
 /* Media Query */
+
+@media (min-width: 760px) {
+
+.wrapper {
+  width: 600px;
+
+}
+hr {
+  width: 60%;
+
+}
+
+fieldset#contact label {
+  display: block;
+  float: left;
+  clear: both;
+  margin-right: 20px;
+}
+
+fieldset#contact input, select  {
+		width: 400px;
+    display: block;
+    float: right;
+	}
+
+  #zip {
+    width: 20%;
+  }
+
+  button {
+		width: 95%;
+	}
+}

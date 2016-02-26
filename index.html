@@ -21,10 +21,10 @@
     <hr id="hr_bold">
     <hr id="hr_regular">
 
-
+<div class="wrapper">
     <h2>Contact Information</h2>
 
-    <fieldset>
+    <fieldset id="contact">
       <div class="contact_info">
 
       <label for="name">Full Name</label>
@@ -43,6 +43,7 @@
       <input type="text" id="city" name="user_city">
 
       <label for="state">State</label>
+
       <select id="state" name="state">
         <option value="Choose_State">Choose State</option>
         <option value="Alabama">Alabama </option>
@@ -105,21 +106,28 @@
     <h2>Newsletter</h2>
     <fieldset id="newsletter">
     Select the newsletters you would live to receive
-    
+
     <p><input type="checkbox" id="news_type" value="html_news" name="newsletters"> HTML News
+
     <br><input type="checkbox" id="news_type" value="css_news" name="newsletters"> CSS News
+
     <br><input type="checkbox" id="news_type" value="javascript_news" name="newsletters"> Javascript News
 
     <p><label>Newsletter Format</label></p>
+
     <input type="radio" id="format" value="html_option" name="newsletter_format"> HTML
+
     <br><input type="radio" id="format" value="plain_text" name="newsletter_format"> Plain text
 
     <p>Other topics you'd like to hear about</p>
-    <textarea id="other_topics" value="other_topics" name="other_topics"></textarea>
-  </fieldset>
-    <p><button type="submit">Sign Up</button></p>
-  </form>
-    <footer>Copyright The Code Review</footer>
 
+    <textarea id="other_topics" value="other_topics" name="other_topics"></textarea>
+
+  </fieldset>
+    <p><button type="submit" id="submit">Sign Up</button></p>
+  </form>
+
+    <footer>Copyright The Code Review</footer>
+  </div>
 </body>
 </html>
