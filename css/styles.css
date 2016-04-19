@@ -12,10 +12,9 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
-.wrapper {
+.wrapper, .bottom_wrapper {
   max-width: 95%;
   margin: 0 auto;
-
 }
 
 h2 {
@@ -41,6 +40,7 @@ label {
 footer {
   text-align: center;
   font-style: italic;
+    padding-bottom: 20px;
 }
 
 input::-webkit-input-placeholder {
@@ -120,7 +120,7 @@ fieldset#newsletter input {
 	}
 
 #other_topics {
-  width: 100%;
+    width: 100%;
   border: none;
   background-color: #dedede;
   border-radius: 5px;
@@ -128,7 +128,7 @@ fieldset#newsletter input {
 }
 
 button {
-  width: 90%;
+  width: 87%;
   border-radius: 5px;
   background-color: #42aba8;
   color: #fff;
@@ -150,14 +150,10 @@ button:hover {
 
 @media (min-width: 760px) {
 
-.wrapper {
+.wrapper, .bottom_wrapper {
   width: 600px;
-
 }
-hr {
-  width: 60%;
 
-}
 
 fieldset#contact label {
   display: block;
@@ -166,17 +162,22 @@ fieldset#contact label {
   margin-right: 20px;
 }
 
-fieldset#contact input, select  {
-		width: 400px;
-    display: block;
+fieldset#contact input:not(#zip), select {
+    width: 400px;
+    display: inline-flex;
     float: right;
 	}
 
   #zip {
-    width: 20%;
+    width: 150px;
+    display: inline-flex;
+    float: left; 
+    margin-left: 63px;
+    
+    
   }
 
   button {
-		width: 95%;
+		width: 92%;
 	}
 }
